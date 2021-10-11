@@ -16,8 +16,8 @@ def index():
 
 @app.route('/pong', methods=['GET'])
 def pong():
-    num = random.randint(0, 9)
-    return '<h1>' + num + '</h1>'
+    randInt = random.randint(0, 9)
+    return render_template("random-num.html", randInt=randInt)
 
 
 
